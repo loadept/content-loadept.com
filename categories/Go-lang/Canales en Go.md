@@ -18,8 +18,9 @@ func main() {
 	fmt.Println(myChannel)
 }
 ```
->[!IMPORTANT] ¿Qué hará Println?
-De momento, **fmt.Println(myChannel)** solo imprimirá la dirección de memoria donde se encuentra el canal, algo similar a: `0xc000020060`
+>[!IMPORTANT]
+>¿Qué hará Println?
+>De momento, **fmt.Println(myChannel)** solo imprimirá la dirección de memoria donde se encuentra el canal, algo similar a: `0xc000020060`
 
 Acabamos de crear un canal (`myChannel`) de tipo entero (`int`). Este canal está diseñado para enviar y recibir datos de inmediato, ya que no tiene **buffer**.
 ## ¿Qué es un canal con o sin buffer?
@@ -173,11 +174,13 @@ func main() {
 	// > Hello World
 }
 ```
->[!IMPORTANT] Conversión de canales
-Hay que tener en cuenta que podemos convertir canales bidireccionales a unidirrecionales, pero no podemos hacerlo al revés, convertir canales unidireccionales a bidireccionales no es posible.
+>[!IMPORTANT]
+>Conversión de canales
+>Hay que tener en cuenta que podemos convertir canales bidireccionales a unidirrecionales, pero no podemos hacerlo al revés, convertir canales unidireccionales a bidireccionales no es posible.
 
->[!IMPORTANT] Seguridad con canales unidireccionales
-Usar canales unidireccionales aumenta la seguridad y la claridad del código, ya que especifica exactamente cómo debe utilizarse el canal en cada función.
+>[!IMPORTANT]
+>Seguridad con canales unidireccionales
+>Usar canales unidireccionales aumenta la seguridad y la claridad del código, ya que especifica exactamente cómo debe utilizarse el canal en cada función.
 
 >[!IMPORTANT] Dato importante sobre el operador `<-`
 Cuando usamos `<-myChannel`, siempre extraemos datos del canal. Esto ocurre incluso si no los almacenamos en una variable:
@@ -509,5 +512,6 @@ func sendValues(ch chan<- int, ch2 <-chan string) {
 }
 ```
 Otra ventaja es que también podemos combinar `select` con las distintas estructuras de control disponibles en **Go**, como `if`, `switch`, etc. Esto aumenta aún más su versatilidad al manejar canales.
->[!IMPORTANT] Espera de bajo consumo
-Cuando se usa `select` junto con un `for loop` infinito, el uso de `select` puede llegar a ser muy eficiente, esto porque cuando `select` está esperando que algún canal tenga datos, el runtime de **Go** pone la goroutine en un estado de espera (**waiting**). Lo cual hace que que la goroutine no consuma ciclos de CPU mientras está esperando, esto hace que su uso sea muy eficiente.
+>[!IMPORTANT]
+>Espera de bajo consumo
+>Cuando se usa `select` junto con un `for loop` infinito, el uso de `select` puede llegar a ser muy eficiente, esto porque cuando `select` está esperando que algún canal tenga datos, el runtime de >**Go** pone la goroutine en un estado de espera (**waiting**). Lo cual hace que que la goroutine no consuma ciclos de CPU mientras está esperando, esto hace que su uso sea muy eficiente.
