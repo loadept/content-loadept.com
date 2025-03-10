@@ -2,7 +2,7 @@
 Un canal es un tipo de dato en **Go**, que se usa para comunicar **goroutines**. Es un tipo de dato primitivo del lenguaje, al igual que `slice`, `array` o `map`.
 
 Su propio nombre lo dice, es un canal o "tubería" por donde la información pasa de una **goroutine** a otra. Se pueden enviar o recibir valores de un tipo específico, porque los canales necesitan ser de un tipo de dato, ya sea `int`, `string`, etc.
-![](go-channel.svg)
+![go-channel](https://github.com/user-attachments/assets/2546f49a-144f-4076-b4f8-a4626cf51b13)
 ## Introducción al uso de canales
 Para trabajar con canales existe el nombre `chan`, que representa este tipo de dato.
 ## ¿Cómo se crean?
@@ -48,8 +48,9 @@ main.main()
 	/home/user/Golang/channels.go:10 +0x2d
 exit status 2
 ```
-
-![](go-no-receptor-channel.svg)![](arrow.svg)![](go-lock-channel.svg)
+![go-no-receptor-channel](https://github.com/user-attachments/assets/3442da60-5e67-4462-be8b-240dccde1f02)
+![arrow](https://github.com/user-attachments/assets/b38c86b1-9238-47aa-bf9f-3d166e931bb0)
+![go-lock-channel](https://github.com/user-attachments/assets/ded68c16-94ef-4afd-9f39-c1aa12231a0f)
 Por defecto, los canales se crean sin buffer. Esto significa que necesitan que el receptor y el emisor estén sincronizados.
 ### Canales con buffer
 Si queremos que un canal pueda almacenar valores temporalmente sin bloquearse, podemos asignarle un buffer:
@@ -67,7 +68,7 @@ func main() {
 }
 ```
 Aquí, usamos `make` para crear un canal con un buffer con capacidad para 4 valores. Ahora el canal puede guardar los datos temporalmente hasta que alguien los reciba.
-![](go-capacity-channel.svg)
+![go-capacity-channel](https://github.com/user-attachments/assets/56e97802-ccca-4f70-b7d4-53bf89864246)
 ## ¿Cómo empezar a trabajar con canales?
 Para trabajar con canales, usamos el operador `<-`. Este operador es intuitivo:
 - Si el canal está **antes** del operador, como en `<-myChannel`, significa que estamos extrayendo datos del canal.
@@ -182,8 +183,9 @@ func main() {
 >Seguridad con canales unidireccionales
 >Usar canales unidireccionales aumenta la seguridad y la claridad del código, ya que especifica exactamente cómo debe utilizarse el canal en cada función.
 
->[!IMPORTANT] Dato importante sobre el operador `<-`
-Cuando usamos `<-myChannel`, siempre extraemos datos del canal. Esto ocurre incluso si no los almacenamos en una variable:
+>[!IMPORTANT]
+>Dato importante sobre el operador `<-`
+>Cuando usamos `<-myChannel`, siempre extraemos datos del canal. Esto ocurre incluso si no los almacenamos en una variable:
 >```go
 >func main() {
 >	ch := make(chan int)
