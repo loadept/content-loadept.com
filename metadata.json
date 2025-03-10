@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Go-lang",
+      "hex_color": "#29beb0",
+      "nerd_icon": ""
+    },
+    {
+      "id": 2,
+      "name": "Linux y servidores",
+      "hex_color": "#c678dd",
+      "nerd_icon": ""
+    }
+  ]
+}
