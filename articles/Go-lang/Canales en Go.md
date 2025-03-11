@@ -1,8 +1,13 @@
 ---
 title: "Canales en Go"
+date: 2025-03-10
+tags:
+  - go
+  - golang
+  - channels
+  - goroutines
 ---
 
-# Canales en Go
 Un canal es un tipo de dato en **Go**, que se usa para comunicar **goroutines**. Es un tipo de dato primitivo del lenguaje, al igual que `slice`, `array` o `map`.
 
 Su propio nombre lo dice, es un canal o "tubería" por donde la información pasa de una **goroutine** a otra. Se pueden enviar o recibir valores de un tipo específico, porque los canales necesitan ser de un tipo de dato, ya sea `int`, `string`, etc.
