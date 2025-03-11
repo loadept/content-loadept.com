@@ -1,3 +1,7 @@
+---
+title: "Canales en Go"
+---
+
 # Canales en Go
 Un canal es un tipo de dato en **Go**, que se usa para comunicar **goroutines**. Es un tipo de dato primitivo del lenguaje, al igual que `slice`, `array` o `map`.
 
