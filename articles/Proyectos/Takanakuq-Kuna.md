@@ -21,12 +21,11 @@ tags:
 - [x] Publicaciones para la comunidad..
 - [x] Registro de recetas médicas.
 - [ ] Alertas personalizadas al tomar cualquier medicamento..
-
 ## [Visita el repositorio 🔗](https://github.com/loadept/takanakuq-kuna)
 
 # Puntos finales de API 🌐
 
-## Puntos finales de autenticación y información del perfil 👤
+## Puntos finales de autenticación e información del perfil 👤
 Para obtener los datos del usuario
 - **GET [BASE_URL/api/user]()** *with token*
 
