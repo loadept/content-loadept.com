@@ -28,7 +28,6 @@ Comencemos con una de las herramientas más comunes: **gzip**.
 gzip backup.sql
 ```
 
->[!IMPORTANT]
 >Este comando comprimirá el archivo `backup.sql` y generará el archivo `backup.sql.gz`. Cabe destacar que, por defecto, **gzip** elimina el archivo original. Si queremos mantener el archivo original y generar solo el archivo comprimido, podemos usar la opción `-k` o `--keep`
 
 ```bash
@@ -45,7 +44,6 @@ o
 gunzip backup.sql.gz
 ```
 
->[!IMPORTANT]
 >Esto descomprimirá el archivo pero eliminará el archivo `.gz`. Si queremos conservar tanto el archivo comprimido como el descomprimido, usamos `-k` nuevamente.
 
 ```bash
@@ -63,7 +61,6 @@ La compresión con **xz** es muy similar a la de **gzip**. Para comprimir un arc
 xz backup.sql
 ```
 
->[!IMPORTANT]
 >Esto generará `backup.sql.xz` pero al igual que **gzip** eliminará el archivo original. Si queremos mantener el archivo original, usamos `-k`
 
 ```bash
@@ -100,7 +97,6 @@ Este comando comprimirá el archivo `backup.sql` en `backup.7z`. También podemo
 ```
 Esto habrá comprimido el directorio `nvim`.
 
->[!IMPORTANT]
 >Es importante señalar que, a diferencia de **gzip** y **xz**, **7zip** no elimina el archivo original.
 ## Descompresión con 7zip
 Para descomprimir con **7zip**, utilizamos la opción `x`:
@@ -133,8 +129,7 @@ Para desarchivar un archivo `.tar`, usamos la opción `-x` (extract):
 tar -xvf files.tar
 ```
 
->[!IMPORTANT]
->Este comando extraerá los archivos del archivo tar sin eliminarlos.
+>Este comando extraerá los archivos del archivo tar sin eliminarlos.
 
 ---
 ## Compresión con tar
@@ -193,5 +188,4 @@ Para archivos `xz`
 tar -xJvf files.tar.gz
 ```
 
->[!IMPORTANT]
 >**tar** no elimina los archivos al archivar o desarchivar, por lo que no necesitamos la opción `-k`.
