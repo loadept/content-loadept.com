@@ -22,6 +22,8 @@ tags:
 - [x] Registro de recetas médicas.
 - [ ] Alertas personalizadas al tomar cualquier medicamento..
 
+## [Visita el repositorio 🔗](https://github.com/loadept/takanakuq-kuna)
+
 # Puntos finales de API 🌐
 
 ## Puntos finales de autenticación y información del perfil 👤
@@ -144,10 +146,11 @@ pnpm run dev
 # ESTRUCTURA DEL PROYECTO
 
 ## Base de datos: 
-![dbstructure](./images/schema.png)
+![schema](https://github.com/user-attachments/assets/6eb7008c-17cf-4a16-9a37-2d907460aee1)
 
 ## Estructura de directorios:
-![dirstructure](./images/tree1.png)
+![tree1](https://github.com/user-attachments/assets/e90e1d78-c889-4580-b9b4-deeab0211baa)
+
 ### Descripción:
 
 - **config:** Contiene archivos de configuración importantes, incluyendo ajustes para la conexión a la base de datos, fuentes permitidas para CORS, creación y validación de tokens, y configuraciones de fecha y hora.
