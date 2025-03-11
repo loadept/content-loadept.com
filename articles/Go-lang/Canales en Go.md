@@ -1,11 +1,11 @@
 ---
 title: "Canales en Go"
-date: 2025-03-10
+date: "2025-03-10"
 tags:
-  - go
-  - golang
-  - channels
-  - goroutines
+  - "go"
+  - "golang"
+  - "channels"
+  - "goroutines"
 ---
 
 Un canal es un tipo de dato en **Go**, que se usa para comunicar **goroutines**. Es un tipo de dato primitivo del lenguaje, al igual que `slice`, `array` o `map`.
@@ -27,7 +27,6 @@ func main() {
 	fmt.Println(myChannel)
 }
 ```
->[!IMPORTANT]
 >¿Qué hará Println?
 >De momento, **fmt.Println(myChannel)** solo imprimirá la dirección de memoria donde se encuentra el canal, algo similar a: `0xc000020060`
 
@@ -184,15 +183,12 @@ func main() {
 	// > Hello World
 }
 ```
->[!IMPORTANT]
 >Conversión de canales
 >Hay que tener en cuenta que podemos convertir canales bidireccionales a unidirrecionales, pero no podemos hacerlo al revés, convertir canales unidireccionales a bidireccionales no es posible.
 
->[!IMPORTANT]
 >Seguridad con canales unidireccionales
 >Usar canales unidireccionales aumenta la seguridad y la claridad del código, ya que especifica exactamente cómo debe utilizarse el canal en cada función.
 
->[!IMPORTANT]
 >Dato importante sobre el operador `<-`
 >Cuando usamos `<-myChannel`, siempre extraemos datos del canal. Esto ocurre incluso si no los almacenamos en una variable:
 >```go
@@ -523,6 +519,5 @@ func sendValues(ch chan<- int, ch2 <-chan string) {
 }
 ```
 Otra ventaja es que también podemos combinar `select` con las distintas estructuras de control disponibles en **Go**, como `if`, `switch`, etc. Esto aumenta aún más su versatilidad al manejar canales.
->[!IMPORTANT]
 >Espera de bajo consumo
 >Cuando se usa `select` junto con un `for loop` infinito, el uso de `select` puede llegar a ser muy eficiente, esto porque cuando `select` está esperando que algún canal tenga datos, el runtime de >**Go** pone la goroutine en un estado de espera (**waiting**). Lo cual hace que que la goroutine no consuma ciclos de CPU mientras está esperando, esto hace que su uso sea muy eficiente.
