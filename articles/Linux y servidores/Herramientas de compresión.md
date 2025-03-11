@@ -1,4 +1,14 @@
-# Compresión y Descompresión en Linux
+---
+title: "Compresión y Descompresión en Linux"
+date: "2025-03-10"
+tags:
+  - "linux"
+  - "terminal"
+  - "gzip"
+  - "xz"
+  - "7zip"
+---
+
 En Linux, existen varias herramientas de compresión como **gz** o **zip**, algunas más robustas que otras. A continuación, revisaremos las más comunes y mostraremos ejemplos de compresión de archivos y directorios, pero antes, un pequeño cuadro de comparación.
 
 Este cuadro muestra cuál es más robusto que otro:
