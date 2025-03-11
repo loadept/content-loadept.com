@@ -11,6 +11,12 @@
       "name": "Linux y servidores",
       "hex_color": "#c678dd",
       "nerd_icon": ""
+    },
+    {
+      "id": 3,
+      "name": "Proyectos",
+      "hex_color": "#98c379",
+      "nerd_icon": ""
     }
   ]
 }
