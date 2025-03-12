@@ -1,5 +1,5 @@
 ---
-title: "Canales en Go"
+title: "Concurrencia en Go: Canales y Select en Acción"
 date: "2025-03-10"
 tags:
   - "go"
