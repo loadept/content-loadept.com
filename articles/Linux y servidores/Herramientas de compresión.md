@@ -1,6 +1,6 @@
 ---
 title: "Compresión y Descompresión en Linux"
-date: "2025-03-10"
+date: "2025-05-26"
 tags:
   - "linux"
   - "terminal"
