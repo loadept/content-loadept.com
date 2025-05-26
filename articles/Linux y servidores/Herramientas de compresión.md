@@ -15,7 +15,7 @@ Este cuadro muestra cuál es más robusto que otro:
 
 | Nombre | Algoritmo | Compresion |   Velocidad    |              Usos               |
 | :----: | :-------: | :--------: | :------------: | :-----------------------------: |
-|  7zip  |   LZMA2   | 🔥 Máxima  |    🐢 Lento    | Archivos o paquetes muy grander |
+|  7zip  |   LZMA2   | 🔥 Máxima  |    🐢 Lento    | Archivos o paquetes muy grandes |
 |   xz   |   LZMA    |  🔥 Alta   | 🐌 Medio-lento |  Distribuciones Linux, backups  |
 |  gzip  |  Deflate  |  ⚡ Media   |   🚀 Rápido    |   Logs, transmiciones en vivo   |
 |  zip   |  Deflate  |  🧊 Baja   |   🚀 Rápido    |    Compatibilidad universal     |
