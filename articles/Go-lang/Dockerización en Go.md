@@ -11,7 +11,7 @@ tags:
 ---
 
 Conocer cómo dockerizar de manera correcta en **Go** es muy importante, ya que puede tener un impacto positivo en el rendimiento, el consumo de recursos y el almacenamiento. Entender aspectos como **multi-stage builds** o el uso de versiones ligeras de las imágenes puede ser muy útil.
-## Qué imagen usar?
+## ¿Qué imagen usar?
 Para la dockerización con buenas prácticas en **Go**, siempre es recomendable usar versiones `alpine` de las imágenes de **golang**. Dependiendo de la versión de **Go** que estemos utilizando, podemos elegir imágenes como `golang:1.23.4-alpine3.21`. Las versiones dependen de nuestra necesidad: si queremos una versión específica, una versión flexible con respecto al parche, etc.
 
 A continuación, dockerizaremos una pequeña API usando una versión flexible de Alpine.
