@@ -15,6 +15,12 @@ tags:
 
 ---
 
+## Repositorio
+
+Puedes ver el código fuente, reportar errores o colaborar directamente en el repositorio oficial: [https://github.com/jsusmachaca/qtheme](https://github.com/jsusmachaca/qtheme)
+
+---
+
 # Instalación
 
 ```sh
